@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "d09c2797-e146-41b8-96dd-50077ef0b596",
+		"name": "ProjetoJavaRauleIan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BuscarPorCodigo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhots:8080/apiCliente/buscarPorCodigo/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhots:8080/apiCliente/todos"
+			},
+			"response": []
+		},
+		{
+			"name": "Inserir",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\":2,\r\n    \"email\": \"raul@gmail.com\",\r\n    \"nome\":\"raul\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhots:8080/apiCliente/inserir"
+			},
+			"response": []
+		},
+		{
+			"name": "PorNome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhots:8080/apiCliente/porNome/raul"
+			},
+			"response": []
+		},
+		{
+			"name": "PorEmail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhots:8080/apiCliente/porEmail/raul"
+			},
+			"response": []
+		},
+		{
+			"name": "Remover",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhots:8080/apiCliente/remover"
+			},
+			"response": []
+		},
+		{
+			"name": "RemoverPorCodigo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhots:8080/apiCliente/removerPorCodigo/3"
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\":2,\r\n    \"email\": \"raulplinio@gmail.com\",\r\n    \"nome\":\"raulplinio\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhots:8080/apiCliente/atualizar"
+			},
+			"response": []
+		},
+		{
+			"name": "Produto/Todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhots:8080/apiProduto/todos"
+			},
+			"response": []
+		},
+		{
+			"name": "Produto/BuscarPorCodigo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhots:8080/apiProduto/buscarPorCodigo/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Produto/BuscarPorInfo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhots:8080/apiProduto/buscarPorInfo/teste"
+			},
+			"response": []
+		},
+		{
+			"name": "Produto/BuscarPorMarca",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhots:8080/apiProduto/buscarPorMarca/nike"
+			},
+			"response": []
+		},
+		{
+			"name": "Produto/BuscarPorPreco",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhots:8080/apiProduto/buscarPorPreco/150"
+			},
+			"response": []
+		},
+		{
+			"name": "Produto/Inserir",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigoProd\":3,\r\n    \"inf\": \"camisa\",\r\n    \"marca\":\"puma\",\r\n    \"preco\":200\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhots:8080/apiProduto/inserir"
+			},
+			"response": []
+		},
+		{
+			"name": "Produto/Remover",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhots:8080/apiProduto/remover"
+			},
+			"response": []
+		},
+		{
+			"name": "Produto/RemoverPorCodigo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhots:8080/apiProduto/removerPorCodigo/3"
+			},
+			"response": []
+		},
+		{
+			"name": "Produto/Atualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigoProd\":2,\r\n    \"inf\": \"tenis\",\r\n    \"marca\":\"adidas\",\r\n    \"preco\":200\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhots:8080/apiProduto/atualizar"
+			},
+			"response": []
+		}
+	]
+}
